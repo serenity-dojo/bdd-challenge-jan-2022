@@ -9,7 +9,7 @@ Feature: Complete a purchase
   by mistake. Then he provides his payment details and receives a confirmation email.
 
   Background:
-    Given Colin has logged on to the application
+    Given Colin has logged onto the application
 
   Scenario: Colin purchases a single item
     Given Colin's shopping cart is empty

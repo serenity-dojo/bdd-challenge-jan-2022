@@ -1,6 +1,7 @@
 package starter.screenplay.catalog;
 
 import net.serenitybdd.screenplay.Question;
+import net.serenitybdd.screenplay.questions.Text;
 import net.serenitybdd.screenplay.targets.Target;
 import net.serenitybdd.screenplay.ui.PageElement;
 import starter.domain.Product;
@@ -17,4 +18,6 @@ public class ProductItemList {
                             element.findBy(".inventory_item_price").getText()
                     )
             );
+
+    public static final Question<Collection<String>> INVENTORY_ITEM_NAMES = Text.ofEach(INVENTORY_ITEM_NAME);
 }

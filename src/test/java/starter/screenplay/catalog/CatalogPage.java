@@ -7,6 +7,7 @@ import net.serenitybdd.screenplay.ui.PageElement;
 public class CatalogPage {
     public static Target addToCartButtonForItem(String itemName) {
         return Button.called("Add to cart")
-                     .inside(PageElement.called("inventory_item").containingText(itemName));
+                .inside(PageElement.locatedBy(".inventory_item").containingText(itemName));
+                //     .inside(PageElement.called("inventory_item").containingText(itemName));
     }
 }
